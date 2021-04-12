@@ -1,0 +1,60 @@
+\documentclass[a4paper, 11pt]{article}
+
+\addtolength{\hoffset}{-2.25cm}
+\addtolength{\textwidth}{4.5cm}
+\addtolength{\voffset}{-3.25cm}
+\addtolength{\textheight}{5cm}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0in}
+
+\usepackage{wrapfig}
+\usepackage{charter}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[english, shorthands=off, ngerman]{babel}
+\usepackage{amsthm, amsmath, amssymb}
+\usepackage{marvosym, wasysym}
+\usepackage{float}
+\usepackage[final, colorlinks = false]{hyperref}
+\usepackage{graphicx, multicol}
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{censor}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage[backend=biber,style=numeric, sorting=nyt]{biblatex}
+\addbibresource{literatur.bib}
+\usepackage{csquotes}
+\usepackage[ddMMyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+\fancyhead[C]{}
+\medskip
+\begin{minipage}{0.295\textwidth}
+\raggedright
+\today\\
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\centering 
+\Large
+Blockchain anhand des Beispiels Ethereum \\
+\end{minipage}
+\begin{minipage}{0.295\textwidth}
+\raggedleft
+König Michael\\
+\end{minipage}
+\medskip
+
+\input{content/main}
+
+\printbibliography
+
+\end{document}
